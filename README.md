@@ -28,6 +28,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - @heroicons/react for icons
 - @testing-library for testing ui component
 
+## Why these tools?
+
 - date-fns, classnames & @heroicons/reactused to speed up development and tidiness.
 - @tanstack/react-query for optimisation of data fetching, easy to use and keep up to date with server state.
 - @testing-library most comonly used for unit tests of react components.
