@@ -20,17 +20,21 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Tools used
 
-To learn more about Next.js, take a look at the following resources:
+date-fns for date management
+classnames for easy class name management
+@tanstack/react-query for data fetching and statemanagement.
+@heroicons/react for icons
+@testing-library for testing ui component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+date-fns, classnames & @heroicons/reactused to speed up development and tidiness.
+@tanstack/react-query for optimisation of data fetching, easy to use and keep up to date with server state.
+@testing-library most comonly used for unit tests of react components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Excluded stuff
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Fetching and caching of data could be optimized. With implentation of hydration for example.
+Extracting more resused things such as headings nav navitems into ui components.
+Customizing colors using [`color roles`](https://m3.material.io/styles/color/roles).
+Adding e2e tests. Maybe using cypress.
