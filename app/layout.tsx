@@ -1,6 +1,10 @@
+import { SearchBar } from "@/components/SearchBar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "./providers";
 import "./globals.css";
+import Link from "next/link";
+import { Nav } from "@/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>
+          <Header></Header>
+          {children}
+        </Providers>
+      </body>
     </html>
+  );
+}
+
+function Header() {
+  return (
+    <Nav className="bg-black min-h-16 text-white p-4 sm:p-2">
+      <Link href="/">TvMaze</Link>
+      <SearchBar></SearchBar>
+      <Link href="/shows/favorites">Favorites</Link>
+      <Link href="/shows/upcoming">Upcoming</Link>
+    </Nav>
   );
 }
