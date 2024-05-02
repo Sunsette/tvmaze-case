@@ -22,19 +22,19 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Tools used
 
-date-fns for date management
-classnames for easy class name management
-@tanstack/react-query for data fetching and statemanagement.
-@heroicons/react for icons
-@testing-library for testing ui component
+- date-fns for date management
+- classnames for easy class name management
+- @tanstack/react-query for data fetching and statemanagement.
+- @heroicons/react for icons
+- @testing-library for testing ui component
 
-date-fns, classnames & @heroicons/reactused to speed up development and tidiness.
-@tanstack/react-query for optimisation of data fetching, easy to use and keep up to date with server state.
-@testing-library most comonly used for unit tests of react components.
+- date-fns, classnames & @heroicons/reactused to speed up development and tidiness.
+- @tanstack/react-query for optimisation of data fetching, easy to use and keep up to date with server state.
+- @testing-library most comonly used for unit tests of react components.
 
 ## Excluded stuff
 
-Fetching and caching of data could be optimized. With implentation of hydration for example.
-Extracting more resused things such as headings nav navitems into ui components.
-Customizing colors using [`color roles`](https://m3.material.io/styles/color/roles).
-Adding e2e tests. Maybe using cypress.
+- Fetching and caching of data could be optimized. With implentation of hydration for example.
+- Extracting more resused things such as headings nav navitems into ui components.
+- Customizing colors using [`color roles`](https://m3.material.io/styles/color/roles).
+- Adding e2e tests. Maybe using cypress.
